@@ -2,7 +2,6 @@ function ContactPage() {
     return (
         <section className="bg-black mt-10 text-white py-20 px-4 sm:px-6 lg:px-10 max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-                {/* Contact Details */}
                 <div className="space-y-8">
                     <h2 className="text-3xl sm:text-4xl font-bold">Let's Connect</h2>
                     <p className="text-gray-400 text-base leading-relaxed">
@@ -16,7 +15,6 @@ function ContactPage() {
                     </div>
                 </div>
 
-                {/* Contact Form */}
                 <form className="bg-white/5 border border-white/10 backdrop-blur-sm p-8 rounded-xl shadow-md space-y-6 w-full">
                     <div>
                         <label className="block text-sm font-semibold mb-1">Name</label>

@@ -12,7 +12,6 @@ export default function Home() {
       <div className="pt-6">
       <AnimatedTooltipPreview/>
       </div>
-      {/* <AnimatedTestimonialsDemo/> */}
     </main>
   );
 }
