@@ -29,7 +29,7 @@ const ExperienceSection = () => {
   return (
     <section className="relative max-w-4xl mx-auto py-16 bg-black/80 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Experience</h2>
+         <h3 className="text-xl  mb-4 md:text-2xl bg-clip-text text-transparent bg-gradient-to-b text-center from-neutral-200 to-neutral-600 font-sans font-bold">Experience</h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {experiences?.map((exp, index) => (
