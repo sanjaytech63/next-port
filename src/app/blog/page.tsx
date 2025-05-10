@@ -8,6 +8,7 @@ import {
 } from "@/componets/ui/3d-card"; // fix typo if needed
 import Link from "next/link";
 import { Button } from "@/componets/ui/moving-border";
+import Image from "next/image";
 
 const experienceData = [
     {
@@ -45,7 +46,7 @@ const experienceData = [
         title: "TypeScript",
         description:
             "Enhanced JavaScript code with TypeScript for better type safety.",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO53Xem4TDRZczRqcCEB8_9KsChX9PQXr96g&s",
+        image: "",
     },
 ];
 
@@ -72,21 +73,21 @@ const Blog = () => {
                                     {item.description}
                                 </CardItem>
                                 <CardItem translateZ="100" className="w-full mt-4">
-                                    <img
+                                    <Image
                                         src={item.image}
-                                        height="1000"
-                                        width="1000"
-                                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                                         alt={item.title}
+                                        width={1000}
+                                        height={1000}
+                                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                                     />
                                 </CardItem>
-                                <div className="flex justify-center items-center mt-10">
-                                    <Link href="/projects">
+                                <div className=" mt-10">
+                                    <Link href="/project">
                                         <Button
                                             borderRadius="1.75rem"
                                             className="bg-black text-white cursor-pointer border-neutral-200 dark:border-slate-800"
                                         >
-                                            Read Moer...
+                                            View More...
                                         </Button>
                                     </Link>
                                 </div>

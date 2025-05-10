@@ -1,4 +1,5 @@
 "use client";
+
 import {
   motion,
   useAnimationFrame,
@@ -6,7 +7,7 @@ import {
   useMotionValue,
   useTransform,
 } from "motion/react";
-import { useRef } from "react";
+import { ElementType, ReactNode, useRef } from "react";
 import { cn } from "@/utils/utils";
 
 export function Button({
@@ -20,13 +21,13 @@ export function Button({
   ...otherProps
 }: {
   borderRadius?: string;
-  children: React.ReactNode;
-  as?: any;
+  children: ReactNode;
+  as?: ElementType;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
+  [key: string]: unknown; 
 }) {
   return (
     <Component
@@ -75,33 +76,28 @@ export const MovingBorder = ({
   ry,
   ...otherProps
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
+  [key: string]: unknown; 
 }) => {
-  // Update ref type to SVGRectElement
   const pathRef = useRef<SVGRectElement>(null);
   const progress = useMotionValue<number>(0);
 
-  useAnimationFrame((time) => {
+  useAnimationFrame((time: number) => {
     if (pathRef.current) {
-      const length = pathRef.current?.getTotalLength();
-      if (length) {
-        const pxPerMillisecond = length / duration;
-        progress.set((time * pxPerMillisecond) % length);
-      }
+      const length = pathRef.current.getTotalLength();
+      const pxPerMillisecond = length / duration;
+      progress.set((time * pxPerMillisecond) % length);
     }
   });
 
-  const x = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val)?.x || 0
+  const x = useTransform(progress, (val) =>
+    pathRef.current?.getPointAtLength(val)?.x ?? 0
   );
-  const y = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val)?.y || 0
+  const y = useTransform(progress, (val) =>
+    pathRef.current?.getPointAtLength(val)?.y ?? 0
   );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
@@ -122,7 +118,7 @@ export const MovingBorder = ({
           height="100%"
           rx={rx}
           ry={ry}
-          ref={pathRef} // ref is now correctly assigned to SVGRectElement
+          ref={pathRef}
         />
       </svg>
       <motion.div

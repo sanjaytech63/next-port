@@ -11,7 +11,6 @@ const HeroSections = () => {
             <Spotlight className="-top-40 left-0 md:-top-20 md:left-60" fill="white" />
 
             <div className="max-w-3xl mx-auto pt-30 text-center relative z-10">
-                {/* Profile Image */}
                 <div className="flex relative flex-col items-center mb-6">
                     <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white/10 shadow-md">
                         <Image
@@ -23,26 +22,25 @@ const HeroSections = () => {
                         />
                     </div>
 
-                    {/* Verified Badge */}
                     <div className="mt-18 absolute px-4 py-1 text-sm bg-white text-black rounded-full font-medium flex items-center gap-2 shadow">
                         <span>✔</span> Verified Expert
                     </div>
                 </div>
 
-                {/* Title */}
+               
                 <h1 className="text-3xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
-                    Hello, I am a Frontend Developer
+                    Hello I am a Frontend Developer
                 </h1>
 
-                {/* Subtitle */}
+              
                 <p className="text-base md:text-md text-gray-400 mt-4 font-light leading-relaxed">
-                    I'm a frontend developer passionate about building responsive, high-performance web apps using <span className="text-white font-medium">React.js</span> and <span className="text-white font-medium">Next.js</span>. I focus on clean UI, intuitive UX, and delivering modern digital experiences.
+                    Im a frontend developer passionate about building responsive high-performance web apps using <span className="text-white font-medium">React.js</span> and <span className="text-white font-medium">Next.js</span>. I focus on clean UI intuitive UX and delivering modern digital experiences.
                 </p>
 
 
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-                    <Link href="/projects">
+                    <Link href="/project">
                         <Button
                             borderRadius="1.75rem"
                             className="bg-black text-white cursor-pointer border-neutral-200 dark:border-slate-800"
@@ -50,7 +48,7 @@ const HeroSections = () => {
                             View Projects
                         </Button>
                     </Link>
-                    <Link href="/contact">
+                    <Link href="/contact-us">
                         <Button
                             borderRadius="1.75rem"
                             className="text-white bg-black cursor-pointer border-neutral-200 dark:border-slate-800"

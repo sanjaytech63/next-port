@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { AnchorHTMLAttributes, ReactNode } from "react";
 import { motion } from "motion/react";
 
 
@@ -42,11 +42,11 @@ export const MenuItem = ({
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
+                layoutId="active"
                 className="bg-white  backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
                 <motion.div
-                  layout // layout ensures smooth animation
+                  layout 
                   className="w-max h-full p-4"
                 >
                   {children}
@@ -109,7 +109,10 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+interface HoveredLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  children: ReactNode;
+}
+export const HoveredLink = ({ children, ...rest }: HoveredLinkProps) => {
   return (
     <a
       {...rest}

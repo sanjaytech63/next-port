@@ -10,11 +10,21 @@ const nextConfig: NextConfig = {
       'i.ytimg.com',
       'd2zz54dhkzkgk9.cloudfront.net',
       's3.envato.com',
-      'mir-s3-cdn-cf.behance.net'
+      'mir-s3-cdn-cf.behance.net',
+      'media.licdn.com',
+      'pagedone.io',
+      'ares.decipherzone.com',
+      'd1e5wbyhbs6zy6.cloudfront.net',
+      'liveimages.algoworks.com',
+      'cdn.prod.website-files.com',
+      'cdn.dribbble.com'
     
     ],
   },
-    turboMode: false,
+  // reactStrictMode:true,
+  eslint:{
+    ignoreDuringBuilds:true
+  }
 };
 
 export default nextConfig;

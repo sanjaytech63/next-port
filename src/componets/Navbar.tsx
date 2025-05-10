@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiMenu, FiX } from "react-icons/fi";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -21,6 +22,13 @@ const Navbar = () => {
       <div className="flex items-center justify-between h-[70px] px-6">
         {/* Logo */}
         <div className="flex cursor-pointer items-center px-4 py-2 text-white rounded-full backdrop-blur-md shadow-sm">
+          <Image
+            src="https://cdn.pixabay.com/photo/2024/06/01/09/01/young-man-8801861_640.jpg"
+            alt="Sanjay Tech"
+            width={24}
+            height={24}
+            className="rounded-full mr-2"
+          />
           <span className="font-semibold text-sm">Sanjay Tech</span>
         </div>
 

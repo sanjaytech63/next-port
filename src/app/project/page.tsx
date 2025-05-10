@@ -24,12 +24,12 @@ const experienceData = [
   {
     title: "Landing Page",
     description: "Marketing landing page with animations and SEO optimization.",
-    image: "/images/landing.jpg",
+    image: "https://adoric.com/blog/wp-content/uploads/2021/03/Landing-Page-1.jpg",
   },
   {
     title: "Dashboard UI",
     description: "Admin dashboard with Tailwind and chart integrations.",
-    image: "https://adoric.com/blog/wp-content/uploads/2021/03/Landing-Page-1.jpg",
+    image: "https://cdn.dribbble.com/userupload/14436525/file/original-d3b2a6bc8babc0d80f8dbd3c80a33e3a.png?resize=1600x1200",
   },
   {
     title: "Real-time Chat App",
@@ -89,7 +89,7 @@ export default function ProjectsSection() {
                   />
                 </CardItem>
                 <div className="flex justify-center items-center mt-8">
-                  <Link href="/projects">
+                  <Link href="/project">
                     <Button
                       borderRadius="1.75rem"
                       className="bg-black text-white border border-neutral-200 hover:bg-white hover:text-black transition"

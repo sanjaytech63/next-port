@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -5,10 +6,12 @@ export default function AboutPage() {
     <section className="bg-black mt-10 text-white py-20 px-4 sm:px-6 lg:px-10 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="w-full">
-          <img
-            src="https://pagedone.io/asset/uploads/1717741205.png"
+          <Image
+            src="https://cdn.pixabay.com/photo/2024/06/01/09/01/young-man-8801861_640.jpg"
             alt="Developer profile"
-            className="rounded-2xl shadow-xl object-cover w-full max-h-[500px] mx-auto hover:scale-105 transition-transform duration-500"
+            width={800} 
+            height={500}
+            className="rounded-lg shadow-xl object-cover w-full max-h-[500px] mx-auto hover:scale-105 transition-transform duration-500"
           />
         </div>
 
@@ -38,7 +41,7 @@ export default function AboutPage() {
           <div className="bg-white/5 border border-white/10 backdrop-blur-sm rounded-xl p-6 shadow-md space-y-3 text-sm text-gray-300">
             <p><span className="text-white font-semibold">Name:</span> Sanjay Choudhary</p>
             <p><span className="text-white font-semibold">Email:</span> sjat6375697673@gmail.com</p>
-            <p><span className="text-white font-semibold">Phone:</span> 6376024125 - 9376893981</p>
+            <p><span className="text-white font-semibold">Phone:</span> 6376024125  9376893981</p>
           </div>
 
           <div>
