@@ -1,17 +1,18 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiTailwindcss, SiMongodb, SiRedux } from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiRedux,SiNextdotjs } from "react-icons/si";
 
 const skills = [
-    { name: "HTML5", icon: <FaHtml5 className="text-orange-500" /> },
-    { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" /> },
-    { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400" /> },
-    { name: "React", icon: <FaReact className="text-blue-300" /> },
-    { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
-    { name: "Tailwind", icon: <SiTailwindcss className="text-teal-400" /> },
-    { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-    { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
-    { name: "Git", icon: <FaGitAlt className="text-orange-400" /> },
+  { name: "HTML5", icon: <FaHtml5 className="text-orange-500" /> },
+  { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" /> },
+  { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400" /> },
+  { name: "React", icon: <FaReact className="text-blue-300" /> },
+  { name: "Next.js", icon: <SiNextdotjs className="text-white dark:text-gray-200" /> },
+  { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
+  { name: "Tailwind", icon: <SiTailwindcss className="text-teal-400" /> },
+  { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
+  { name: "Git", icon: <FaGitAlt className="text-orange-400" /> },
 ];
 
 function SkillsSection() {

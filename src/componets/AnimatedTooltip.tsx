@@ -48,8 +48,11 @@ const people = [
 
 export function AnimatedTooltipPreview() {
   return (
-    <div className="flex flex-row items-center justify-center  w-full">
-      <AnimatedTooltip items={people} />
+    <div className="  w-full">
+      <h3 className="text-xl  mb-6 md:text-2xl bg-clip-text text-transparent bg-gradient-to-b text-center from-neutral-200 to-neutral-600 font-sans font-bold">My Freelance Client</h3>
+      <div className="flex flex-row items-center justify-center  w-full">
+        <AnimatedTooltip items={people} />
+      </div>
     </div>
   );
 }

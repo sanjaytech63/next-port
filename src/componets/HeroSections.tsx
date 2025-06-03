@@ -27,19 +27,18 @@ const HeroSections = () => {
                     </div>
                 </div>
 
-               
+
                 <h1 className="text-3xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
-                    Hello I am a Frontend Developer
+                    Hello I am a Full Stack Developer
                 </h1>
 
-              
+
                 <p className="text-base md:text-md text-gray-400 mt-4 font-light leading-relaxed">
-                    Im a frontend developer passionate about building responsive high-performance web apps using <span className="text-white font-medium">React.js</span> and <span className="text-white font-medium">Next.js</span>. I focus on clean UI intuitive UX and delivering modern digital experiences.
+                    I'm a <span className="text-white font-medium">Full Stack Developer</span> specializing in the <span className="text-white font-medium">MERN stack</span> (MongoDB, Express.js, React.js, and Node.js). I’m passionate about building responsive, high-performance web applications with clean UI and intuitive UX. I focus on delivering modern, scalable, and efficient digital experiences from front-end to back-end.
                 </p>
 
-
                 {/* Buttons */}
-                <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+                <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6 mb-4">
                     <Link href="/project">
                         <Button
                             borderRadius="1.75rem"

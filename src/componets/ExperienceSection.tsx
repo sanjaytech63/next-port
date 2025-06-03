@@ -3,25 +3,25 @@ import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 
 const experiences = [
   {
-    company: "OpenAI",
+    company: "Bvm Solutions",
     role: "Frontend Developer",
     duration: "Jan 2023 - Present",
     stack: [<FaReact key="react" />, <FaHtml5 key="html" />, <FaCss3Alt key="css" />],
     description: "Developed responsive UIs using React.js and Tailwind CSS with high performance optimization and accessibility."
   },
   {
-    company: "Google",
-    role: "Full Stack Developer",
-    duration: "Jun 2021 - Dec 2022",
-    stack: [<FaReact key="react" />, <FaNodeJs key="node" />],
-    description: "Built scalable web applications with MERN stack and improved page load speed by 40%."
+    company: "Y2code Solutions",
+    role: "Frontend Developer",
+    duration: "Jan 2024 - Present",
+    stack: [<FaReact key="react" />, <FaHtml5 key="html" />, <FaCss3Alt key="css" />],
+    description: "Built scalable web applications with React Js and improved page load speed by 40%."
   },
   {
     company: "Freelance",
-    role: "Web Developer",
-    duration: "2019 - 2021",
-    stack: [<FaHtml5 key="html" />, <FaCss3Alt key="css" />],
-    description: "Delivered over 30+ client websites with custom design and SEO optimizations."
+    role: "Full Staxk Developer",
+    duration: "Jan 2025 - Present",
+    stack: [<FaReact key="react" />,  <FaCss3Alt key="css" />,<FaNodeJs key="css" />],
+    description: "Delivered over 10+ client websites with custom design and SEO optimizations."
   }
 ];
 

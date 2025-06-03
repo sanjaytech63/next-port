@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 
@@ -8,22 +9,30 @@ function Footer() {
         {/* Branding */}
         <div>
           <h2 className="text-2xl font-bold text-white mb-4">
-            Sanjay<span className="text-gray-400">Tech</span>
+            Sanjay<span className="text-gray-400">Choudhary</span>
           </h2>
-          <p className="text-sm">
-            Crafting modern websites with clean UI, responsive design, and real-world performance.
+          <p className="text-sm text-gray-400">
+            MERN Stack Developer crafting modern web applications with clean UI, responsive design, and real-world performance from front-end to back-end.
           </p>
+
         </div>
 
         {/* Menu */}
         <div>
           <h3 className="text-white text-lg font-semibold mb-4">Menu</h3>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-white cursor-pointer">Home</li>
-            <li className="hover:text-white cursor-pointer">Projects</li>
-            <li className="hover:text-white cursor-pointer">Work</li>
-            <li className="hover:text-white cursor-pointer">Blog</li>
-            <li className="hover:text-white cursor-pointer">Contact</li>
+           <li className="hover:text-white cursor-pointer">
+              <Link href="/">Work</Link>
+            </li>
+            <li className="hover:text-white cursor-pointer">
+              <Link href="/project">Projects</Link>
+            </li>
+            <li className="hover:text-white cursor-pointer">
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li className="hover:text-white cursor-pointer">
+              <Link href="/contact-us">Contact</Link>
+            </li>
           </ul>
         </div>
 
